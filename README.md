@@ -31,12 +31,22 @@ I accomplished the following tasks once I had a complete database
 - In descending order, I listed the frequency count of employee last names, i.e., how many employees share each last name.
 
 #### Additional Analysis
-I decided to take the following steps to generate a visualization of the data:
+In this repository, I have also included a [jupyter notebook file](https://github.com/sahobitayo/sql-challenge/blob/master/EmployeeSQL/sql_query.ipynb). In this file, I imported the tables from the sql database into pandas. After importing the database, I used matplotlib to create a histogram that visualizes the most common salary ranges for employees and a bar chart that shows the average salary by job title. Also there a joke Employee in there with an employee ID number is 499942.
 
-- I imported the SQL database into Pandas.
+Before you run the jupyter notebook, you will need to do the following:
+- Install psycopg2 in the anaconda environment.
+- Create a config.py file in the same directory as the jupyter notebook. Then, update the file to include your postgresql username and password, as shown in the following example:
+```
+username = "postgres"
+password = "<your PostgreSQL password>"
+```
 
-- I created a histogram to visualize the most common salary ranges for employees.
+### Tools Used
+- **SQL**
+- **Quick DBD**
+- **Jupyter Notebook**
+- **Python**
+- **Matplotlib**
+- **Pandas**
+- **SQLAlchemy**
 
-- I created a bar chart of average salary by title.
-
-Also there a joke Employee in there with an employee ID number is 499942.
